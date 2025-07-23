@@ -1,7 +1,12 @@
-@use "./partials/components/nav";
-@use "./partials/components/body";
-
 
 // BASE
-// @use "./partials/base/text";
-   
+@use "./partials/base/text";
+// @use "./partials/components/base";
+
+
+// COMPONENTS
+@use "./partials/components/nav";
+@use "./partials/components/body";
+@use "./partials/components/header";
+@use "./partials/components/img";
+@use "./partials/components/media";

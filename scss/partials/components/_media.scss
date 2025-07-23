@@ -1,0 +1,99 @@
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  nav ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .body-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "texto-1"
+      "texto-2"
+      "texto-3";
+  }
+
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celulares (pantallas chicas) */
+@media (max-width: 600px) {
+    /* 🔧 Ajustes base del header */
+header {
+  position: sticky;
+  width: 100%;
+  height: auto;
+  background-color: green;
+  top: 0;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 2px solid black;
+  z-index: 10;
+}
+
+/* 🔧 Estilo del menú hamburguesa */
+
+
+/* 📱 Estilo para pantallas pequeñas */
+
+ @media (max-width: 768px) {
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: green;
+}
+
+  /* Asegura que el logo y el icono no se encimen */
+  .logo {
+    display: none;
+  }
+}
+.body-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "texto-1"
+      "texto-2"
+      "texto-3";
+  }
+
+  .testimonios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .images {
+    grid-template-columns: 1fr;
+  }
+}
+
+
