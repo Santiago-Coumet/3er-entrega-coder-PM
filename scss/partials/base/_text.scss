@@ -1,17 +1,19 @@
+@use "../utilities/variables";
 h1{
-color: aliceblue;
-text-align: center;
+color: variables.$color-texto-claro;
+text-align: variables.$texto-general;
 }
 h2{
-    color: aliceblue;
-    text-align: center;
+    color: variables.$color-texto-claro;
+    text-align: variables.$texto-general;
 }
 
 h3{
-    color: aliceblue;
-    text-align: center;
+    color: variables.$color-texto-claro;
+    text-align: variables.$texto-general;
 }
 p{
-    color: aliceblue;
-    text-align: center;
+    color: variables.$color-texto-claro;
+    text-align: variables.$texto-general;
+
 }

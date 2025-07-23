@@ -1,4 +1,4 @@
-/* Tablets (pantallas medianas) */
+
 @media (max-width: 1024px) {
   nav ul {
     grid-template-columns: repeat(3, 1fr);
@@ -21,11 +21,10 @@
   }
 }
 
-/* Celulares (pantallas chicas) */
 @media (max-width: 600px) {
-    /* 🔧 Ajustes base del header */
+
 header {
-  position: sticky;
+  position:fixed;
   width: 100%;
   height: auto;
   background-color: green;
@@ -36,10 +35,9 @@ header {
   z-index: 10;
 }
 
-/* 🔧 Estilo del menú hamburguesa */
 
 
-/* 📱 Estilo para pantallas pequeñas */
+
 
  @media (max-width: 768px) {
 nav ul {
@@ -73,7 +71,6 @@ nav ul li a:hover {
   color: green;
 }
 
-  /* Asegura que el logo y el icono no se encimen */
   .logo {
     display: none;
   }

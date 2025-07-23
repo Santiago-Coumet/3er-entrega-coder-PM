@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1 {
   color: aliceblue;
   text-align: center;
@@ -48,7 +47,7 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 nav ul li a:hover {
-  background-color: white;
+  background-color: aliceblue;
   color: black;
   transform: scale(1.2);
   box-shadow: 0px 4px 10px gray;
@@ -68,8 +67,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  font-family: "Montserrat", sans-serif;
-  background-color: green;
 }
 body .body-grid {
   display: grid;
@@ -134,7 +131,6 @@ header {
   border-radius: 10px;
 }
 
-/* Tablets (pantallas medianas) */
 @media (max-width: 1024px) {
   nav ul {
     grid-template-columns: repeat(3, 1fr);
@@ -150,11 +146,9 @@ header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* Celulares (pantallas chicas) */
 @media (max-width: 600px) {
-  /* 🔧 Ajustes base del header */
   header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: auto;
     background-color: green;
@@ -164,8 +158,6 @@ header {
     border-bottom: 2px solid black;
     z-index: 10;
   }
-  /* 🔧 Estilo del menú hamburguesa */
-  /* 📱 Estilo para pantallas pequeñas */
 }
 @media (max-width: 600px) and (max-width: 768px) {
   nav ul {
@@ -195,7 +187,6 @@ header {
     background-color: white;
     color: green;
   }
-  /* Asegura que el logo y el icono no se encimen */
   .logo {
     display: none;
   }
