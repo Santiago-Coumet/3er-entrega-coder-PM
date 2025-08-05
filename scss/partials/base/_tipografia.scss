@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @use "../utilities/variables";
 
 body{
          font-family: variables.$fuente-principal;
     }
+h1{
+     font-family: variables.$fuente-principal;
+}
+h2{
+     font-family: variables.$fuente-principal;
+}
+p{
+     font-family: variables.$fuente-principal;
+}

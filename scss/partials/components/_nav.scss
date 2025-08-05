@@ -1,46 +1,49 @@
-@use "../utilities/variables";
+// @use "../utilities/variables";
   
-  nav ul{
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 20px;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-         li{
-            list-style: none;
-            color: variables.$color-texto-claro;     
-            margin: 0;            
-            padding: 0; 
-            display: grid;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-              a{
-                text-decoration: none;
-                color: variables.$color-texto-claro; 
-                display: flex;
-                padding: 2px 4px;
-                border-radius: 10px;
-                transition: all 0.3s ease;
-                  &:hover{
-                          background-color: variables.$color-texto-claro; 
-                          color: black;
-                          transform: scale(1.2);           
-                          box-shadow: 0px 4px 10px gray;
+//   nav ul{
+//         list-style: none;
+//         display: grid;
+//         grid-template-columns: repeat(5, 1fr);
+//         column-gap: 20px;
+//         justify-items: center;
+//         align-items: center;
+//         align-content: center;
+//         justify-content: center;
+//          li{
+//             list-style: none;
+//             color: variables.$color-texto-claro;     
+//             margin: 0;            
+//             padding: 0; 
+//             display: grid;
+//             justify-items: center;
+//             justify-content: center;
+//             align-items: center;
+//               a{
+//                 text-decoration: none;
+//                 color: variables.$color-texto-claro; 
+//                 display: flex;
+//                 padding: 2px 4px;
+//                 border-radius: 10px;
+//                 transition: all 0.3s ease;
+//                   &:hover{
+//                           background-color: variables.$color-texto-claro; 
+//                           color: black;
+//                           transform: scale(1.2);           
+//                           box-shadow: 0px 4px 10px gray;
 
 
-                    }
-              }
-        }
-}  
-.logo{
-        width: 30px;      
-  height: auto;      
-  position: absolute; 
-  top: 10px;        
-  left: 10px; 
+//                     }
+//               }
+//         }
+// }  
+// .logo{
+//         width: 30px;      
+//   height: auto;      
+//   position: absolute; 
+//   top: 10px;        
+//   left: 10px; 
 
-}
+// }
+
+
+
