@@ -45,5 +45,71 @@
 
 // }
 
+// .nav-color{
+            
+//             display: block;
+//             position: sticky;
+//             background-color: green;
+            
+//                     .nav-hamburguesa{
+//                                  margin-left: auto;
+//                                     border: none;
+//                                     outline: none;
+//                                     box-shadow: none;
+//                                     background-color: transparent;
+//                                     .nav-icono{
+//                                             background-image: none;
+//                                             border: none;
+//                                             outline: none;
+//                                             .nav-mia{
+//                                                        width: 100%;
+//                                                        text-align: center;
+//                                                        padding-left: 0;
+//                                                        margin: 0 auto;
+//                                                         .nav-li{
+//                                                                 display: inline-block;
+//                                                                 float: none;
+//                                                                 padding: 0 20px;
+//                                                         }
 
 
+//                                             } 
+                 
+//                                     }                   
+                
+//                     }      
+
+//             }
+.logo{
+                    width: 30px;
+                    height: auto;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+}
+.nav-color{
+        display: block;
+        position: sticky;
+        background-color: green;
+}
+.nav-mia{
+        width: fit-content;       /* El ul solo ocupa el ancho necesario */
+        margin-left: auto;
+        margin-right: auto;       /* Centra horizontalmente el ul */
+        text-align: center;       /* Alinea el contenido de los li (opcional) */
+        padding: 0;
+        gap: 50px;
+
+}
+.nav-hamburguesa{
+                margin-left: auto;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                background-color: transparent;
+}
+.nav-icono{
+                background-image: none;
+                border: none;
+                outline: none;
+}

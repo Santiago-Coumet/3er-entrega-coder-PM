@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   color: aliceblue;
   text-align: center;
@@ -18,47 +19,41 @@ p {
   text-align: center;
 }
 
-nav ul {  
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 20px;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-nav ul li {
-  list-style: none;
-  color: aliceblue;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-}
-nav ul li a {
-  text-decoration: none;
-  color: aliceblue;
-  display: flex;
-  padding: 2px 4px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-nav ul li a:hover {
-  background-color: aliceblue;
-  color: black;
-  transform: scale(1.2);
-  box-shadow: 0px 4px 10px gray;
-}
-
 .logo {
   width: 30px;
   height: auto;
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.nav-color {
+  display: block;
+  position: sticky;
+  background-color: green;
+}
+
+.nav-mia {
+  width: fit-content; /* El ul solo ocupa el ancho necesario */
+  margin-left: auto;
+  margin-right: auto; /* Centra horizontalmente el ul */
+  text-align: center; /* Alinea el contenido de los li (opcional) */
+  padding: 0;
+  gap: 50px;
+}
+
+.nav-hamburguesa {
+  margin-left: auto;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.nav-icono {
+  background-image: none;
+  border: none;
+  outline: none;
 }
 
 body {
@@ -203,6 +198,30 @@ header {
   .images {
     grid-template-columns: 1fr;
   }
+}
+.boton-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745; /* verde */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.boton-link:hover {
+  background-color: #218838; /* verde más oscuro */
+}
+
+footer {
+  background-color: grey;
+}
+
+.footer-col {
+  border-right: 1px solid black; /* o el color que prefieras */
+  padding-right: 15px;
+  height: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
