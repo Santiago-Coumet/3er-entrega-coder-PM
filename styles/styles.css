@@ -1,6 +1,6 @@
 @charset "UTF-8";
 h1 {
-  color: aliceblue;
+  color: rgb(242, 243, 244);
   text-align: center;
 }
 
@@ -10,12 +10,12 @@ h2 {
 }
 
 h3 {
-  color: aliceblue;
+  color: rgb(242, 243, 244);
   text-align: center;
 }
 
 p {
-  color: aliceblue;
+  color: rgb(242, 243, 244);
   text-align: center;
 }
 
@@ -84,7 +84,7 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: aliceblue;
+  color: rgb(242, 243, 244);
 }
 
 .texto-1 {
@@ -138,19 +138,26 @@ header {
 }
 /* Opcional: para móviles muy pequeños */
 @media (max-width: 600px) {
-  body .body-grid,
   body .testimonios-grid,
   body .images {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 14px;
   }
-  header {
+  body .body-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto; /* Altura automática */
+    grid-template-areas: "texto-1" "texto-2" "texto-3"; /* Apila cada bloque */
+    gap: 14px;
+  }
+  body .body-grid header {
     position: sticky;
     top: 0;
     z-index: 9999;
   }
 }
-.boton-link {
+.boton-link, .boton-qs {
   display: inline-block;
   padding: 10px 20px;
   background-color: #28a745; /* verde */
@@ -161,7 +168,7 @@ header {
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
-.boton-link:hover {
+.boton-link:hover, .boton-qs:hover {
   background-color: #218838; /* verde más oscuro */
 }
 

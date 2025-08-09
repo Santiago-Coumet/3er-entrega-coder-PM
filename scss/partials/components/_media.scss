@@ -127,16 +127,26 @@
 
 /* Opcional: para móviles muy pequeños */
 @media (max-width: 600px) {
-  body .body-grid,
+  
   body .testimonios-grid,
   body .images {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 14px;
   }
-
+body .body-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto;   /* Altura automática */
+    grid-template-areas:
+      "texto-1"
+      "texto-2"
+      "texto-3"; /* Apila cada bloque */
+    gap: 14px;
   header {
     position: sticky;
     top: 0;
     z-index: 9999;
   }
+}
 }

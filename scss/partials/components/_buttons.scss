@@ -12,4 +12,6 @@
                 background-color: #218838; /* verde más oscuro */
     }
 }
-
+.boton-qs{
+            @extend .boton-link
+}
