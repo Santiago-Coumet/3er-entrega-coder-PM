@@ -133,11 +133,12 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+    grid-template-areas: none;
     gap: 18px;
   }
 }
 /* Opcional: para móviles muy pequeños */
-@media (max-width: 600px) {
+@media (max-width: 992px) {
   body .testimonios-grid,
   body .images {
     display: grid;
@@ -166,6 +167,8 @@ header {
   border-radius: 8px;
   font-family: Arial, sans-serif;
   font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 0.3s ease;
 }
 .boton-link:hover, .boton-qs:hover {
@@ -174,12 +177,33 @@ header {
 
 footer {
   background-color: grey;
+  align-items: center;
+  justify-items: center;
 }
-
-.footer-col {
-  border-right: 1px solid black; /* o el color que prefieras */
+footer .row {
+  align-items: center;
+  justify-content: center;
+}
+footer .row .footer-col {
   padding-right: 15px;
   height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .row .footer-col .footer-col ul {
+  padding-left: 0; /* quita sangría */
+  list-style: none; /* quita viñetas */
+  text-align: center; /* centra texto */
+}
+footer .row .footer-col .footer-col ul .footer-col ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.footer-col .boton-link {
+  display: block; /* cambia a bloque */
+  width: fit-content; /* ajusta ancho al texto */
+  margin: 0 auto; /* centra horizontalmente */
 }
 
 /*# sourceMappingURL=styles.css.map */

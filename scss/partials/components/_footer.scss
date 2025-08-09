@@ -1,8 +1,63 @@
 footer{
         background-color: grey;
+        align-items: center;
+        justify-items: center;
+         .row{
+            align-items: center;
+            justify-content: center;
+            .footer-col {   
+                        padding-right: 15px;
+                        height: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        .footer-col ul{
+                                      padding-left: 0; /* quita sangría */
+                                      list-style: none; /* quita viñetas */
+                                      text-align: center; /* centra texto */ 
+                                      .footer-col ul li a{
+                                                        text-decoration: none;
+                                                        color: aliceblue;
+                                                        }
+                                      }           
+                        }
+        }
 }
-.footer-col {
-    border-right: 1px solid black; /* o el color que prefieras */
-    padding-right: 15px;
-    height: 80%;
-}
+       
+.footer-col .boton-link {
+    display: block; /* cambia a bloque */
+    width: fit-content; /* ajusta ancho al texto */
+    margin: 0 auto; /* centra horizontalmente */
+}         
+                        
+                                     
+
+
+
+// .row{
+//     align-items: center;
+//     justify-content: center;
+// }
+// .footer-col {
+    
+//     padding-right: 15px;
+//     height: 80%;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+// .footer-col ul{
+//                 padding-left: 0; /* quita sangría */
+//                 list-style: none; /* quita viñetas */
+//                 text-align: center; /* centra texto */
+
+// }
+
+// .footer-col ul{
+//                 padding-left: 0; /* quita sangría */
+//                 list-style: none; /* quita viñetas */
+//                 text-align: center; /* centra texto */
+                
+// }
+    // .footer-col ul a{
+    //                 text-decoration: none;
+    //                 color: aliceblue;
+    // }
