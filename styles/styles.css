@@ -17,6 +17,7 @@ h3 {
 p {
   color: rgb(242, 243, 244);
   text-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -50,18 +51,13 @@ p {
   background-color: transparent;
 }
 
-.nav-icono {
-  background-image: none;
-  border: none;
-  outline: none;
-}
-
 body {
   background-image: url("../images/backGround.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-color: rgba(135, 151, 135, 0.452);
 }
 body .body-grid {
   display: grid;
@@ -190,20 +186,38 @@ footer .row .footer-col {
   margin-left: auto;
   margin-right: auto;
 }
-footer .row .footer-col .footer-col ul {
-  padding-left: 0; /* quita sangría */
-  list-style: none; /* quita viñetas */
-  text-align: center; /* centra texto */
+
+.footer-col .boton-link {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
 }
-footer .row .footer-col .footer-col ul .footer-col ul li a {
+
+.footer-col ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-col ul a {
   text-decoration: none;
   color: aliceblue;
 }
 
-.footer-col .boton-link {
-  display: block; /* cambia a bloque */
-  width: fit-content; /* ajusta ancho al texto */
-  margin: 0 auto; /* centra horizontalmente */
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form .form-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.form .form-1 input,
+.form .form-1 button {
+  width: 100%;
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=styles.css.map */

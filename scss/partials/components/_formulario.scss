@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  justify-content: center;
+
+  .form-1 {
+    display: flex;
+    flex-direction: column; // apila verticalmente
+    gap: 10px;
+    align-items: center; // centra horizontal dentro del form
+
+    input,
+    button {
+      width: 100%; // para que ocupen todo el ancho del form
+      max-width: 250px; // ancho máximo para que no sean gigantes
+    }
+  }
+}

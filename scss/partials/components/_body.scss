@@ -5,11 +5,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-color: variables.$transparencia;
 
   
-
-      .body-grid {
-        display: grid;
+@mixin grid{
+         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
         grid-template-areas:
@@ -19,7 +19,9 @@ body {
         text-align: center;
         gap: 20px;
         box-shadow: variables.$sombra-caja;
-
+}
+      .body-grid {
+              @include grid;
       }
 
       .testimonios-grid {
@@ -30,7 +32,7 @@ body {
       }
 }
 li{
-  list-style: none;     
+  list-style: none;   
   margin: 0;            
   padding: 0;
   color: variables.$color-texto-claro; 

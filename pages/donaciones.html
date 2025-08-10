@@ -13,7 +13,7 @@
 <body>
 <header>
    <nav class="navbar navbar-expand-lg nav-color">
-        <img src="./images/logo.jpg" alt="logo-marca-pajaro" class="logo">
+        <img src="../images/logo.jpg" alt="logo-marca-pajaro" class="logo">
         <div class="container-fluid">
             <button class="navbar-toggler nav-hamburguesa" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -57,23 +57,23 @@
 
 
     </section>
-    <section> <!-- Estan en una misma seccion porque tienen mas relacion entre si -->
+    <section class="doncaiones"> <!-- Estan en una misma seccion porque tienen mas relacion entre si -->
         <h2>Como puedes donar?</h2>
                 <ul>
                     <li> 
-                        <strong> Transferencia Bancaria </strong>
+                        <p><strong> Transferencia Bancaria </strong></p>
                         <p>
                         Banco Verde - Cuenta N°: 123456789 - CBU: 123456789
                         </p>
                     </li>
                     <li> 
-                        <strong> Mercado Pago / Pay Pal </strong>
+                        <p><strong> Mercado Pago / Pay Pal </strong></p>
                         <p>
                         pulmonnatural@correo.org
                         </p>
                     </li>
                     <li> 
-                        <strong> Donacion Presencial </strong>
+                        <p><strong> Donacion Presencial </strong></p>
                         <p>
                         Te esperamos en nuestra sede fisica en Calle Falsa 123, CABA
                         </p>  
@@ -82,11 +82,11 @@
     </section>
     <section>
             <h2>Que logramos con tu ayuda?</h2>
-            <ul>
-                <li>Plantacion de arboles en zonas urbanas y rurales</li>
-                <li>Campañas de reciclaje y limpieza comunitaria</li>
-                <li>Programas educativos en escuelas y barrios</li>
-                <li>Apoyo a voluntarios y guardianes ambientales</li>
+            <ul class="">
+                <li><p>Plantacion de arboles en zonas urbanas y rurales</p></li>
+                <li><p>Campañas de reciclaje y limpieza comunitaria</p></li>
+                <li><p>Programas educativos en escuelas y barrios</p></li>
+                <li><p>Apoyo a voluntarios y guardianes ambientales</p></li>
             </ul>
     </section>
     <section>
@@ -97,9 +97,9 @@
                 </p>
             </article>
     </section>
-    <section>
-            <form action="#" method="post">
-                    <label for="donacion"> Monto de la donacion: </label>
+    <section class="form">
+            <form action="#" method="post" class="form-1">
+                    <label for="donacion"> <p>Monto de la donacion:</p> </label>
                     <input type="number" id="donacion" name="donacion" placeholder="Ej: 500" required>
                     <button type="submit"> Donar ahora </button>
             </form>
